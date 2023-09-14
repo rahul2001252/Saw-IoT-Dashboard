@@ -1,0 +1,64 @@
+.machine-main{
+    display: flex;
+}
+.machine-image{
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-right: 5%;
+    background-color: rgb(248, 246, 246);
+    border: 1px solid black;
+    border-radius: 5%;
+}
+.machine-image h2{
+    text-align: center;
+}
+.machine-img{
+    max-width: 70%;
+    margin-left: 15%;
+}
+.machine-details{
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(248, 246, 246);
+    margin-left:25%;
+    margin-top: 1%;
+    margin-right: 5%;
+    border-radius: 5%;
+    padding-bottom: 20%;
+}
+.btn-item{
+    display: flex;
+    width: 58rem;
+    border: 1px solid black;
+    background-color: rgb(248, 246, 246);
+    justify-content: space-evenly;
+    border-radius: 5%;
+    padding: 5%;
+}
+.machine-status-btns{
+    margin-top:7%;
+}
+.saw-pos-chart{
+    margin-top: 1%;
+    width: 64rem;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(248, 246, 246);
+    border-radius:5%;
+}
+.components-container{
+    margin-top: 1%;
+    border: 1px solid black;
+    background-color: rgb(248, 246, 246);
+    border-radius: 5%;
+    padding: 5%;
+}
+.sensor-data{
+    border:1px solid black;
+    border-radius: 15%;
+    padding: 1%;
+}
+
+.sensor-btn{
+    display: flex;
+}

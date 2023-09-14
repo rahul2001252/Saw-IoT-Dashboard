@@ -1,0 +1,32 @@
+/* LineChart.css */
+
+/* Style the chart container */
+.line-chart {
+    background-color: #f5f5f5; /* Background color for the chart container */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the lines and points */
+  .apexcharts-series-line {
+    stroke: #007bff; /* Line color */
+    stroke-width: 2px; /* Line thickness */
+  }
+  
+  .apexcharts-marker {
+    fill: #007bff; /* Point color */
+  }
+  
+  /* Style the x-axis labels */
+  .apexcharts-xaxis-label {
+    font-size: 14px; /* Adjust the font size for x-axis labels */
+    color: #333; /* X-axis label color */
+  }
+  
+  /* Style the y-axis labels */
+  .apexcharts-yaxis-label {
+    font-size: 14px; /* Adjust the font size for y-axis labels */
+    color: #333; /* Y-axis label color */
+  }
+  
