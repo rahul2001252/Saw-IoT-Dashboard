@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Sidebar.css';
 import logo from './assets/download.png';
 
-const Sidebar = () => {
+function Sidebar(){
   const [isOpen, setIsOpen] = useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
