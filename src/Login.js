@@ -4,6 +4,8 @@ import './Login.css';
 import user_icon from './assets/person.png';
 import email_icon from './assets/email.png';
 import password_icon from './assets/password.png';
+import logo from './assets/download (1).png';
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     try {
       // Send a POST request to your backend for user authentication
-      const response = await fetch('/api/login', {
+      const response = await fetch('http://127.0.0.1:8000/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +40,7 @@ const Login = () => {
   const handleSignup = async () => {
     try {
       // Send a POST request to your backend to create a new user
-      const response = await fetch('/api/signup', {
+      const response = await fetch('http://127.0.0.1:8000/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,30 +73,30 @@ const Login = () => {
       
       <div class="input">
         <img src={email_icon} alt="" />
-        <input type="email" placeholder='email' />
+        <input type="email" placeholder='email'name="email" value={email} onChange={(e)=> setEmail(e.target.value)} />
       </div>
       <div class="input">
         <img src={password_icon} alt="" />
-        <input type="password" placeholder='password' />
+        <input type="password" placeholder='password' name="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
       </div>
       {action==="Sign Up"?<div></div>:<div class="forgot-password">Forgot Password? <span>Click Here!</span></div>}
       
       <div class="submit-container">
-        <div
+        <button
           class={action === 'Login' ? 'submit gray' : 'submit'}
           onClick={action === 'Login' ? handleLogin : handleSignup}
         >
           {action}
-        </div>
-        <div
+        </button>
+        <button
           class={action === 'Sign Up' ? 'submit gray' : 'submit'}
           onClick={() => {
             setAction(action === 'Login' ? 'Sign Up' : 'Login');
           }}
         >
           {action === 'Login' ? 'Sign Up' : 'Login'}
-        </div>
+        </button>
       </div>
     </div>
   )

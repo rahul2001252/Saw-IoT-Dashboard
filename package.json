@@ -9,6 +9,8 @@
     "apexcharts": "^3.42.0",
     "axios": "^1.5.0",
     "chart.js": "^4.4.0",
+    "express-session": "^1.17.3",
+    "js-cookie": "^3.0.5",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-chartjs-2": "^5.2.0",

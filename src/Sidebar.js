@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './Sidebar.css';
-import logo from './assets/download.png';
+import logo from './assets/download (1).png';
 
 function Sidebar(){
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +16,8 @@ function Sidebar(){
 
       </div>
       <ul>
-        <li>Overview</li>
-        <li>Machine details</li>
+        <Link to="/dashboard"><li>Dashboard</li></Link>
+        <Link to="/machinedetails"><li>Machine details</li></Link>
         <li>Controller</li>
         <li>Material Library</li>
         <li>Job Library</li>

@@ -1,24 +1,9 @@
-import React, {useEffect, useState } from 'react';
-import axios from 'axios';
 import ReactApexChart from 'react-apexcharts';
 import './Charts.css';
 
 const MiniDonut = () => {
   console.log("Minidoonut called");
   // Define your chart options and data here
-  /*const [chartData, setChartData] = useState([]);
-  useEffect(() => {
-     console.log('Entered useeffect');
-    axios
-     .get('http://192.168.136.147:8000')
-     .then((response)=> {
-
-      setChartData(response.data.all);
-     })
-     .catch((error) =>{
-      console.error('Error fetching Donut chart data:',error);
-     });
-  }, []);*/
   const chartOptions = {
     chart: {
       type: 'donut',

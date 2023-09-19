@@ -1,11 +1,11 @@
 import React, {useState,useEffect} from 'react';
-import LineChart from './Linechart';
 import axios from 'axios';
+import BarChart from './Barchart';
 
-function LineApp() {
+function BarApp() {
     const [data,setData] = useState([]);
     useEffect(() => {
-        const apiurl ='http://192.168.18.121:8000/api/line-graph-data';
+        const apiurl='http://192.168.18.121:8000/api/bar-graph-data';
         axios.get(apiurl)
          .then((response)=>{
             setData(response.data);
@@ -15,8 +15,9 @@ function LineApp() {
         });
 
    },[]);
-   return(
-   <div><LineChart data={data} /></div>
-   );
+  return (
+    <div><BarChart data={data} /></div>
+  )
 }
-export default LineApp;
+
+export default BarApp

@@ -1,30 +1,22 @@
-import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 import DonutApp from './Charts/DonutApp';
+import BarApp from './Charts/BarApp';
 import MiniDonut from './Charts/MiniDonut';
 import LineApp from './Charts/LineApp';
 import Sidebar from './Sidebar';
-import Home from './Home';
-import BarChart from './Charts/Barchart';
 import StatusButton from './StatusButton';
 
 const Dashboard = () => {
     return (
           <div className="App">
             <Sidebar />
-            <div className='content'>
-              <Routes>
-                <Route path="/" exact component={Dashboard}/>
-                <Route path="./Home" exact component={Home}/>
-              </Routes>
-            </div>
             <h1>Overview</h1>
             <div class="upper-page">
               <div class="machine-status-buttons">
               <h2>Saw Status</h2>
               <div id="status-btn">
-              <div id="statusbtn"><StatusButton /><h4></h4></div>
+              <div id="statusbtn"><StatusButton /></div>
               <div id="statusbtn"><StatusButton /></div>
               <div id="statusbtn"><StatusButton /></div>
               </div>
@@ -76,20 +68,9 @@ const Dashboard = () => {
               <div class="bar-box">
                 <h2>Overall Job Status</h2>
                 <div class="bar-chart">
-                <BarChart />
+                <BarApp />
                 </div>
               </div>
-            </div>
-                        
-            
-            
-            
-            
-            <div className="content">
-              <Routes>
-                <Route path="/" exact component={Home} />
-                <Route path="/charts" component={DonutApp} />
-              </Routes>
             </div>
           </div>
       );

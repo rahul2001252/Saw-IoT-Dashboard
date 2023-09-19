@@ -3,14 +3,14 @@ import React from 'react';
 import './Barchart.css';
 import ReactApexChart from 'react-apexcharts';
 
-const BarChart = () => {
+const BarChart = ({data}) => {
   // Define chart options and data
   const chartOptions = {
     chart: {
       type: 'bar',
     },
     xaxis: {
-      categories: ['Saw 1', 'Saw 2', 'Saw 3', 'Saw 4','Saw 5','Saw 6'],
+      categories: (data.map((item)=>item.machineId)),
     },
     colors: ['#4472C4','#ED7D31']
   };
@@ -18,17 +18,17 @@ const BarChart = () => {
   const chartData = [
     {
       name: 'Job Finished',
-      data: [30, 40, 25, 50, 44, 38,],
+      data: (data.map((item)=>item.jobfinished)),
     },
     {
         name: 'Job Pending',
-        data: [10, 30, 35, 43, 50,58,],
+        data: (data.map((item)=>item.jobpending)),
     },
   ];
 
   return (
     <div>
-      <ReactApexChart options={chartOptions} series={chartData} type="bar"  height="390"  />
+      <ReactApexChart options={chartOptions} series={chartData}height="390" type="bar" />
      
     </div>
   );

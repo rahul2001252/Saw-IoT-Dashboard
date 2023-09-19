@@ -2,7 +2,6 @@ import React from 'react';
 import './Charts.css';
 import Chart1 from './Chart1';
 import Chart2 from './Chart2';
-import { Line } from 'react-chartjs-2';
 
 const Charts = () => {
   const data1 = [{ name: 'Series 1', data: [31, 40, 28, 51, 42, 109, 100] }];

@@ -64,7 +64,7 @@
   position: relative;
 }
 .overall-saw-status{
-  height: 32vh;
+  height: 35vh;
   margin-left:40%;
   border: 1px solid black;
   border-radius: 15px;
@@ -118,13 +118,6 @@
   margin-left: 40%;
   margin-right:1%;
 }
-
-@media (max-width: 1080px){
-  .upper-page {
-    flex-direction: column; /* Stack elements vertically */
-  }
-}
-
 
 @keyframes App-logo-spin {
   from {

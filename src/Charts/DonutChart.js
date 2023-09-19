@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ReactApexChart from 'react-apexcharts';
 import './Charts.css';
-import axios from 'axios';
 const DonutChart = ({data}) => {
   const options = {
     labels: (data.map((item)=>item.status)),
