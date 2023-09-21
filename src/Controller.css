@@ -1,0 +1,96 @@
+
+/*.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  } */
+  
+  .controller-display {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+  }
+
+  .headingtext{
+    font-size:50px;
+    font-weight: bold;
+    margin-top: 0; /* Remove default margin for heading elements */
+    margin-bottom: px; /* Add space below the title */
+    text-align: center;
+
+  }
+  
+  .textheading{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0; /* Remove default margin for heading elements */
+    margin-bottom: 15px; /* Add space below the title */
+    text-align: center;
+  }
+  .half-left {
+    width: 40%; /* Adjust the width as needed */
+    height: 90%;
+    padding: 30px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    border-radius: 10%;
+    background-color: rgb(248, 246, 246);
+  }
+  .half-right{
+    width: 40%;
+    height: 90%;
+    padding: 30px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    border-radius: 10%;
+    background-color: rgb(248, 246, 246);
+  }
+  .button-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+  }
+  
+  button {
+    padding: 20px 40px;
+    background-color: #183553;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width:45%
+    
+  }
+  
+  .button-box button:hover {
+    background-color: #0056b3;
+  }
+
+  .barbox{
+    border: 1px solid rgb(20, 18, 18);
+    border-radius: 15px;
+    position: relative;
+    
+  }
+  
+  .bartext{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0; /* Remove default margin for heading elements */
+    margin-bottom: 15px; 
+    text-align: center; 
+    }
+
+  .bar-chart {
+    /* Style your chart container here */
+    height: 290px; /* Set the height of the chart container */
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+  }
+  

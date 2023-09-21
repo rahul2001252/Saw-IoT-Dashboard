@@ -18,7 +18,7 @@ function Sidebar(){
       <ul>
         <Link to="/dashboard"><li>Dashboard</li></Link>
         <Link to="/machinedetails"><li>Machine details</li></Link>
-        <li>Controller</li>
+        <Link to="/controller"><li>Controller</li></Link>
         <li>Material Library</li>
         <li>Job Library</li>
       </ul>
