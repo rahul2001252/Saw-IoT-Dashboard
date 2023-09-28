@@ -16,11 +16,11 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --host 192.168.136.34",
+    "start": "cross-env HTTPS=true SSL_CRT_FILE=C:/Users/hp/Desktop/CGPT/iot-dashboard/cert.crt SSL_KEY_FILE=C:/Users/hp/Desktop/CGPT/iot-dashboard/cert.key react-scripts start --host 192.168.161.34",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "http-proxy-middleware": "^2.0.6"
   }
 }

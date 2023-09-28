@@ -5,7 +5,7 @@ import axios from 'axios';
 function DonutApp() {
     const [data,setData] = useState([]);
     useEffect(() => {
-        const apiurl ='http://192.168.141.147:8000/api/saw-machines';
+        const apiurl ='https://127.0.0.1:8000/api/saw-machines';
 
         axios.get(apiurl)
          .then((response)=>{
