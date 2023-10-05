@@ -33,8 +33,8 @@ const MiniDonut = () => {
         options={chartOptions}
         series={chartData}
         type="donut"
-        height="160"
-        width="154"
+        height="120"
+        width="120"
       />
     </div>
   );

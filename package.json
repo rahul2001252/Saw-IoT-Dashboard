@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "cross-env HTTPS=true SSL_CRT_FILE=C:/Users/hp/Desktop/CGPT/iot-dashboard/cert.crt SSL_KEY_FILE=C:/Users/hp/Desktop/CGPT/iot-dashboard/cert.key react-scripts start --host 192.168.161.34",
+    "start": "react-scripts start --host 192.168.161.34",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

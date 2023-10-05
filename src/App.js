@@ -5,7 +5,6 @@ import Dashboard from './Dashboard';
 import Login  from './Login';
 import MachineDetails from './MachineDetails';
 import Controller from './Controller';
-import Sidebar from './Sidebar';
 
 function App() {
   return (
