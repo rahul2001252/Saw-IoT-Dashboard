@@ -24,7 +24,7 @@ const DonutChart = ({data}) => {
             options={options}
             series={data.map((item) => item.value)}
             type="donut"
-            height={220}
+            height={250}
           />
     </div>
   );

@@ -27,10 +27,6 @@
   font-size: 24px;
 }
 
-.sidebar {
-  /* Add sidebar styling */
-}
-
 .upper-page {
   display: flex;
   justify-content: space-between;
@@ -42,7 +38,7 @@
   margin-left: 10vw;
   border: 1px solid black ;
   border-radius: 15px;
-  height:40vh; /* Adjust as needed */
+  height:50vh; /* Adjust as needed */
 }
 .machine-status-buttons h2{
   text-align: center;
@@ -50,11 +46,11 @@
 
 .status-btn {
   display: flex;
+  margin-bottom: 5vw;
+  margin-right: 1vw;
 }
 
-.statusbtn {
-  /* Add button styling */
-}
+
 .bottom-page {
   display: flex;
   justify-content: space-evenly;
@@ -65,30 +61,20 @@
   max-width: 400px;
   border: 1px solid black;
   border-radius: 15px;
-  height: 40vh; /* Adjust as needed */
+  height: 50vh; /* Adjust as needed */
 }
 .overall-saw-status h2{
   text-align: center;
 }
-.donutgp {
-  /* Add donut chart styling */
-}
 
 .line-container {
   width: 100%;
-  max-width: 600px;
+  height: 50vh;
   border: 1px solid black;
   border-radius: 15px; /* Adjust as needed */
 }
 .line-container h2{
   text-align: center;
-}
-.saw-pos {
-  /* Add saw position styling */
-}
-
-.rhs {
-  /* Add styling for "rhs" */
 }
 
 .mini-container {
@@ -99,13 +85,6 @@
 }
 .mini-container h2{
   text-align: center;
-}
-.donut-box {
-  /* Add styling for the donut box */
-}
-
-.saw-name {
-  /* Add styling for saw names */
 }
 .individual-stat-head{
   text-align: center;
@@ -124,7 +103,7 @@
 
 .flex-item {
   display: flex;
-  width: 48%; /* Adjust as needed for spacing */
+  width: 48%; 
   margin-bottom: 10px;
 }
 

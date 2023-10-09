@@ -23,7 +23,7 @@ const LineChart = ({data}) => {
 
   return (
     <div>
-      <ReactApexChart options={chartOptions} series={chartData}height="243" type="line" />
+      <ReactApexChart options={chartOptions} series={chartData}height="240" type="line" />
     </div>
   );
 };
