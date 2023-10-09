@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 import './Charts.css';
 const DonutChart = ({data}) => {
@@ -24,7 +24,7 @@ const DonutChart = ({data}) => {
             options={options}
             series={data.map((item) => item.value)}
             type="donut"
-            height={250}
+            height={220}
           />
     </div>
   );

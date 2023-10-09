@@ -14,11 +14,6 @@ function ButtonBox(props) {
 
 function Controller() {
     // Example data for the chart
-    const chartData = {
-      categories: ['Category 1', 'Category 2', 'Category 3'],
-      data: [42, 56, 30],
-    };
-  
     return (
       <div className="OuterBox">
       <h2 className="headingtext">Controller</h2>
