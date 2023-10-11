@@ -5,7 +5,7 @@ import axios from 'axios';
 function LineApp() {
     const [data,setData] = useState([]);
     useEffect(() => {
-        const apiurl ='http://192.168.18.121:8000/api/line-graph-data';
+        const apiurl ='http://localhost:8000/api/line-graph-data';
         axios.get(apiurl)
          .then((response)=>{
             setData(response.data);
