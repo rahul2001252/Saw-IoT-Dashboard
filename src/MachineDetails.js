@@ -2,8 +2,8 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import StatusButton from './StatusButton';
 import './MachineDetails.css';
-import SawPositionChart from './Charts/SawPositionChart';
 import machineimg from './assets/DC22A HemSaW.png';
+import LineApp from './Charts/LineApp';
 
 function MachineDetails() {
   return (
@@ -43,7 +43,7 @@ function MachineDetails() {
                     </div>
                     <div class="saw-pos-chart">
                     <h2>Saw Position</h2>
-                    <SawPositionChart />
+                    <LineApp />
                     </div>
                     
                 </div>

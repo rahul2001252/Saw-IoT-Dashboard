@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
-import './Charts.css';
 const DonutChart = ({data}) => {
   const options = {
     labels: (data.map((item)=>item.status)),

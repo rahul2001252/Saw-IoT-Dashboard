@@ -4,7 +4,7 @@ import './Login.css';
 import user_icon from './assets/person.png';
 import email_icon from './assets/email.png';
 import password_icon from './assets/password.png';
-
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const Login = () => {
@@ -27,6 +27,7 @@ const Login = () => {
       if (response.ok) {
         // Authentication successful, redirect or perform desired action
         console.log('Login successful');
+        toast.success('Login Successful!')
         navigate('/dashboard');
       } else {
         // Authentication failed
@@ -83,12 +84,13 @@ const Login = () => {
       {action==="Sign Up"?<div></div>:<div class="forgot-password">Forgot Password? <span>Click Here!</span></div>}
       
       <div class="submit-container">
-        <button
+        <button id ="enter"
           class={action === 'Login' ? 'submit gray' : 'submit'}
           onClick={action === 'Login' ? handleLogin : handleSignup}
         >
           {action}
         </button>
+        <ToastContainer />
         <button
           class={action === 'Sign Up' ? 'submit gray' : 'submit'}
           onClick={() => {

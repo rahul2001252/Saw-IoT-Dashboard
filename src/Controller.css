@@ -5,7 +5,6 @@
   } */
   
   .controller-display {
-    margin-top: 10vh;
     margin-left: 10vw;
     display: flex;
     justify-content:space-evenly;
@@ -15,7 +14,7 @@
   }
 
   .headingtext{
-    font-size:50px;
+    font-size:30px;
     font-weight: bold;
     margin-top: 0; /* Remove default margin for heading elements */
     margin-bottom: px; /* Add space below the title */

@@ -1,5 +1,4 @@
 import ReactApexChart from 'react-apexcharts';
-import './Charts.css';
 
 const MiniDonut = () => {
   console.log("Minidoonut called");
