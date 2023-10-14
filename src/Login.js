@@ -1,11 +1,10 @@
 import React,{useState} from 'react';
 import { useNavigate} from 'react-router-dom';
-import './Login.css';
+import './styles/Login.css';
 import user_icon from './assets/person.png';
 import email_icon from './assets/email.png';
 import password_icon from './assets/password.png';
-import { ToastContainer, toast } from 'react-toastify';
-
+import {  notification } from 'antd';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -27,11 +26,12 @@ const Login = () => {
       if (response.ok) {
         // Authentication successful, redirect or perform desired action
         console.log('Login successful');
-        toast.success('Login Successful!')
+        openNotification('success','Login Successful');
         navigate('/dashboard');
       } else {
         // Authentication failed
         console.error('Login failed');
+        openNotification('error','Login Failed');
       }
     } catch (error) {
       console.error('Error:', error);
@@ -52,17 +52,26 @@ const Login = () => {
       if (response.ok) {
         // Registration successful, you can also auto-login the user here
         console.log('Registration successful');
+        openNotification('success','Registration Successful');
       } else {
         // Registration failed
         console.error('Registration failed');
+        openNotification('error','Registration failed');
       }
     } catch (error) {
       console.error('Error:', error);
     }
   };
+
+  const openNotification = (type, message) => {
+    notification[type]({
+      message: message,
+    });
+  };
   return(
-    <div class="container">
+      <div class="container">
       <div class="header">
+
         <div class="text">{action}</div>
         <div class="underline"></div>
       </div>
@@ -90,7 +99,6 @@ const Login = () => {
         >
           {action}
         </button>
-        <ToastContainer />
         <button
           class={action === 'Sign Up' ? 'submit gray' : 'submit'}
           onClick={() => {

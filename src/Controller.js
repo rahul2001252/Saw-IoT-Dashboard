@@ -1,5 +1,5 @@
 import React from 'react';
-import './Controller.css';
+import './styles/Controller.css';
 import BarApp from './Charts/BarApp';
 import Sidebar from './Sidebar';
 // ButtonBox component

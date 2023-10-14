@@ -1,7 +1,7 @@
 /* Sidebar container */
 .Sidebar {
-  width:8%; /* Adjust the width as needed */
-  background-color: rgb(248,246,246);
+  width:10vw; /* Adjust the width as needed */
+  background-color: rgb(245, 244, 244);
   color: rgb(15, 13, 13);
   height: 100vh;
   position: fixed;
@@ -9,23 +9,24 @@
   left: 0;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  border-radius: 15px;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
-
+#link{
+  text-decoration: none;
+}
 /* Logo */
 .Logo {
   text-align: center;
-  margin-bottom: 20%;
 }
 
 /* Logo image */
 .Logo img {
-  width: 90%; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Adjust the width as needed */
+  height: 20vh; /* Maintain aspect ratio */
   display: block;
  /* margin: 0 auto;*/
-  margin-right: 19%;
+  
    
 }
 
@@ -42,13 +43,14 @@ li {
 }
 
 li:hover {
-  background-color: #b39d9d; /* Darken the background on hover */
-  border-left: 3px solid #ff5722; /* Add a left border on hover */
+  background-color: #fff; /* Darken the background on hover */
+  width: 10vw; /* Add a left border on hover */
 }
-
+ 
 /* Active link style */
 li.active {
-  background-color: #ff5722; /* Change the background color for the active link */
+  background-color: #fff;
+  width: 10.4vw; /* Change the background color for the active link */
 }
 
 /* Optional: Add custom styles for specific links */

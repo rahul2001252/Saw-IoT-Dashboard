@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import DonutApp from './Charts/DonutApp';
 import BarApp from './Charts/BarApp';
 import MiniDonut from './Charts/MiniDonut';
@@ -18,14 +18,14 @@ const Dashboard = () => {
         <div className="machine-status-buttons">
           <h2>Saw Status</h2>
           <div className="status-btn">
-            <div className="statusbtn"><StatusButton /></div>
-            <div className="statusbtn"><StatusButton /></div>
-            <div className="statusbtn"><StatusButton /></div>
+            <div id="statusbtn"><StatusButton /></div>
+            <div id="statusbtn"><StatusButton /></div>
+            <div id="statusbtn"><StatusButton /></div>
           </div>
           <div className="status-btn">
-            <div className="statusbtn"><StatusButton /></div>
-            <div className="statusbtn"><StatusButton /></div>
-            <div className="statusbtn"><StatusButton /></div>
+            <div id="statusbtn"><StatusButton /></div>
+            <div id="statusbtn"><StatusButton /></div>
+            <div id="statusbtn"><StatusButton /></div>
           </div>
         </div>
         <div className="overall-saw-status">

@@ -1,17 +1,17 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import StatusButton from './StatusButton';
-import './MachineDetails.css';
+import './styles/MachineDetails.css';
 import machineimg from './assets/DC22A HemSaW.png';
 import LineApp from './Charts/LineApp';
 
 function MachineDetails() {
   return (
     <div className="machine-main">
-        <div class="top-page">
-            <div class="Sidebar">
+        <div class="Sidebar">
             <Sidebar />
             </div>
+        <div class="top-page">
             <div class="left-container">
                 <div class="machine-image">
                 <h2>SmartSaw DC22A</h2>

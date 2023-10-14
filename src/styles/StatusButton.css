@@ -1,11 +1,11 @@
 /* StatusButton.css */
 
 .status-button {
-    padding: 30px 30px;
+    padding: 25px 25px;
     border: none;
     cursor: pointer;
     margin-left: 10px;
-    width: 8rem;
+    width: 10vw;
     transition: background-color 0.3s;
     border-radius: 20%;
   }

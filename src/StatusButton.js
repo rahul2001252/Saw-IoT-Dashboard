@@ -1,6 +1,6 @@
 // StatusButton.js
 import React, { useState } from 'react';
-import './StatusButton.css'; 
+import './styles/StatusButton.css'; 
 
 const StatusButton = () => {
   const [status, setStatus] = useState('Cutting'); // Initial status

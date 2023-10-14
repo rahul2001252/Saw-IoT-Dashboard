@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9d13ec3.css",
-    "main.js": "/static/js/main.c9b67972.js",
+    "main.css": "/static/css/main.0ea0632d.css",
+    "main.js": "/static/js/main.11404c81.js",
     "static/js/787.b819ecdc.chunk.js": "/static/js/787.b819ecdc.chunk.js",
     "static/media/DC22A HemSaW.png": "/static/media/DC22A HemSaW.e5ceffd95d03254a5799.png",
-    "static/media/download (1).png": "/static/media/download (1).4e7e27576a7d8c48fb13.png",
+    "static/media/emmetrics-logo.png": "/static/media/emmetrics-logo.37e320cec9e1e5866c92.png",
     "index.html": "/index.html",
-    "main.b9d13ec3.css.map": "/static/css/main.b9d13ec3.css.map",
-    "main.c9b67972.js.map": "/static/js/main.c9b67972.js.map",
+    "main.0ea0632d.css.map": "/static/css/main.0ea0632d.css.map",
+    "main.11404c81.js.map": "/static/js/main.11404c81.js.map",
     "787.b819ecdc.chunk.js.map": "/static/js/787.b819ecdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9d13ec3.css",
-    "static/js/main.c9b67972.js"
+    "static/css/main.0ea0632d.css",
+    "static/js/main.11404c81.js"
   ]
 }
