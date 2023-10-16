@@ -5,7 +5,7 @@ import BarChart from './Barchart';
 function BarApp() {
     const [data,setData] = useState([]);
     useEffect(() => {
-        const apiurl='http://localhost:8000/api/bar-graph-data';
+        const apiurl='http://www.fastapi.in/api/bar-graph-data';
         axios.get(apiurl)
          .then((response)=>{
             setData(response.data);

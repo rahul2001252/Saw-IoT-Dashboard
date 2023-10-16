@@ -14,6 +14,7 @@
 }
 #link{
   text-decoration: none;
+  color: #2F5597;
 }
 /* Logo */
 .Logo {
@@ -22,8 +23,9 @@
 
 /* Logo image */
 .Logo img {
-  width: 100%; /* Adjust the width as needed */
-  height: 20vh; /* Maintain aspect ratio */
+  width: 100%;
+  margin-top: 1vh; /* Adjust the width as needed */
+  height: 10vh; /* Maintain aspect ratio */
   display: block;
  /* margin: 0 auto;*/
   
@@ -38,6 +40,7 @@ ul {
 
 li {
   padding: 15% 0;
+  color: #2F5597;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Add a smooth hover transition */
 }
@@ -50,7 +53,8 @@ li:hover {
 /* Active link style */
 li.active {
   background-color: #fff;
-  width: 10.4vw; /* Change the background color for the active link */
+  border-radius: 15px;
+  width: 11vw; /* Change the background color for the active link */
 }
 
 /* Optional: Add custom styles for specific links */

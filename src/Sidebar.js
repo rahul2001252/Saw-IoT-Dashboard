@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import './styles/Sidebar.css';
-import logo from './assets/emmetrics-logo.png';
+import logo from './assets/emmetrics-logo (1).png';
 
 function Sidebar(){
   const location = useLocation();
