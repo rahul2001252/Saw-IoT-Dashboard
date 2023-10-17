@@ -1,11 +1,12 @@
 /* StatusButton.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
 .status-button {
     padding: 25px 25px;
+    font-family: 'Noto Sans', sans-serif;
     border: none;
     cursor: pointer;
     margin-left: 10px;
-    width: 10vw;
+    width: 9vw;
     transition: background-color 0.3s;
     border-radius: 20%;
   }

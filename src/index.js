@@ -4,13 +4,17 @@ import {BrowserRouter} from 'react-router-dom';
 import './styles/index.css';
 import App from './App';
 import 'apexcharts/dist/apexcharts.css';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './components/theme';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ThemeProvider theme={theme}>
      <App />
+    </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -10,11 +10,11 @@ import StatusButton from './StatusButton';
 const Dashboard = () => {
     return (
       <div className="App">
-      <h2 className="headingText">Overview</h2>
       <div className="sidebar">
         <Sidebar />
       </div>
       <div className="upper-page">
+        
         <div className="machine-status-buttons">
           <h2>Saw Status</h2>
           <div className="status-btn">

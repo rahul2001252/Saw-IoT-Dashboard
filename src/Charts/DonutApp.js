@@ -5,7 +5,7 @@ import axios from 'axios';
 function DonutApp() {
     const [data,setData] = useState([]);
     useEffect(() => {
-        const apiurl ='http://www.fastapi.in/api/saw-machines';
+        const apiurl ='http://192.168.159.116/api/saw-machines';
 
         axios.get(apiurl)
          .then((response)=>{

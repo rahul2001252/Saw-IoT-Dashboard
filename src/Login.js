@@ -15,7 +15,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     try {
       // Send a POST request to your backend for user authentication
-      const response = await fetch('http://www.fastapi.in/api/login', {
+      const response = await fetch('http://localhost:8000/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const Login = () => {
   const handleSignup = async () => {
     try {
       // Send a POST request to your backend to create a new user
-      const response = await fetch('http://www.fastapi.in/api/signup', {
+      const response = await fetch('http://localhost:8000/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -69,38 +69,38 @@ const Login = () => {
     });
   };
   return(
-      <div class="container">
-      <div class="header">
+      <div className="container">
+      <div className="header">
 
-        <div class="text">{action}</div>
-        <div class="underline"></div>
+        <div className="text">{action}</div>
+        <div className="underline"></div>
       </div>
-      <div class="inputs">
-      {action==="Login"?<div></div>:<div class="input">
+      <div className="inputs">
+      {action==="Login"?<div></div>:<div className="input">
         <img src={user_icon} alt="" />
         <input type="text" placeholder="Name" />
       </div>}
       
-      <div class="input">
+      <div className="input">
         <img src={email_icon} alt="" />
         <input type="email" placeholder='email'name="email" value={email} onChange={(e)=> setEmail(e.target.value)} />
       </div>
-      <div class="input">
+      <div className="input">
         <img src={password_icon} alt="" />
         <input type="password" placeholder='password' name="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
       </div>
-      {action==="Sign Up"?<div></div>:<div class="forgot-password">Forgot Password? <span>Click Here!</span></div>}
+      {action==="Sign Up"?<div></div>:<div className="forgot-password">Forgot Password? <span>Click Here!</span></div>}
       
-      <div class="submit-container">
+      <div className="submit-container">
         <button id ="enter"
-          class={action === 'Login' ? 'submit gray' : 'submit'}
+          className={action === 'Login' ? 'submit gray' : 'submit'}
           onClick={action === 'Login' ? handleLogin : handleSignup}
         >
           {action}
         </button>
         <button
-          class={action === 'Sign Up' ? 'submit gray' : 'submit'}
+          className={action === 'Sign Up' ? 'submit gray' : 'submit'}
           onClick={() => {
             setAction(action === 'Login' ? 'Sign Up' : 'Login');
           }}

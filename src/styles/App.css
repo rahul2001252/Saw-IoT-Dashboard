@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
 .App {
   display: flex;
+  font-family: 'Noto Sans', sans-serif;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 20px; 
+  background-color: rgb(232, 238, 240);
+ 
 }
 .App-logo {
   height: 40vmin;
@@ -36,7 +40,7 @@
 
 .machine-status-buttons {
   margin-left: 12vw;
-  margin-right: 1vw;
+  padding-right: 1vw;
   border: 1px;
   background: rgb(245, 244, 244);
   border-radius: 15px;
@@ -60,7 +64,7 @@
 }
 .overall-saw-status {
   width: 70%;
-  max-width: 400px;
+  margin-left: 1vw;
   margin-right: 1vw;
   border: 1px;
   background: rgb(245, 244, 244);
