@@ -13,6 +13,13 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleLogin = async (e) => {
+    e.preventDefault();
+
+    if(!email && !password){
+      console.error("Email and password are required");
+      openNotification('error','Please Enter email and password');
+      return;
+    }
     try {
       // Send a POST request to your backend for user authentication
       const response = await fetch('http://localhost:8000/api/login', {

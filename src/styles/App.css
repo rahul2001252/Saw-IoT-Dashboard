@@ -39,7 +39,7 @@
 }
 
 .machine-status-buttons {
-  margin-left: 12vw;
+  margin-left: 5vw;
   padding-right: 1vw;
   border: 1px;
   background: rgb(245, 244, 244);
@@ -90,7 +90,7 @@
 
 .mini-container {
   width: 60vw;
-  margin-left:12vw;
+  margin-left:5vw;
   margin-right: 1vw;
   border: 1px; 
   background: rgb(245, 244, 244);

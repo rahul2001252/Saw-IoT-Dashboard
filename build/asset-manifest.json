@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7bc02bb7.css",
-    "main.js": "/static/js/main.bd75aedf.js",
+    "main.css": "/static/css/main.cb578978.css",
+    "main.js": "/static/js/main.b99f5130.js",
     "static/js/787.b819ecdc.chunk.js": "/static/js/787.b819ecdc.chunk.js",
     "static/media/DC22A HemSaW.png": "/static/media/DC22A HemSaW.e5ceffd95d03254a5799.png",
-    "static/media/emmetrics-logo (1).png": "/static/media/emmetrics-logo (1).db09c6a275ac38bed576.png",
     "index.html": "/index.html",
-    "main.7bc02bb7.css.map": "/static/css/main.7bc02bb7.css.map",
-    "main.bd75aedf.js.map": "/static/js/main.bd75aedf.js.map",
+    "main.cb578978.css.map": "/static/css/main.cb578978.css.map",
+    "main.b99f5130.js.map": "/static/js/main.b99f5130.js.map",
     "787.b819ecdc.chunk.js.map": "/static/js/787.b819ecdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bc02bb7.css",
-    "static/js/main.bd75aedf.js"
+    "static/css/main.cb578978.css",
+    "static/js/main.b99f5130.js"
   ]
 }
