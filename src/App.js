@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Routes } from 'react-router-dom';
 import './styles/App.css';
 import Dashboard from './Dashboard';
-import Login  from './Login';
+import Login  from './components/Login';
 import MachineDetails from './MachineDetails';
 import Controller from './Controller';
 function App() {
