@@ -89,7 +89,6 @@
 }
 
 .mini-container {
-  width: 60vw;
   margin-left:5vw;
   margin-right: 1vw;
   border: 1px; 
@@ -117,7 +116,6 @@
 
 .flex-item {
   display: flex;
-  width: 48%; 
   margin-bottom: 10px;
 }
 
@@ -126,7 +124,7 @@
  background: rgb(245, 244, 244);
  box-shadow: 5px 10px 10px 10px rgb(233, 227, 227);
  border-radius:15px;
- margin-left: 1vw; /* Add donut styling */
+ margin: 5px; /* Add donut styling */
 }
 
 .bar {

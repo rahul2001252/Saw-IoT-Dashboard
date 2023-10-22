@@ -1,13 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './styles/App.css';
 import DonutApp from './Charts/DonutApp';
 import BarApp from './Charts/BarApp';
 import MiniDonut from './Charts/MiniDonut';
 import LineApp from './Charts/LineApp';
 import Sidebar from './Sidebar';
+import { useNavigate} from 'react-router-dom';
 import StatusButton from './StatusButton';
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+  // var ws = null;
+  // useEffect(() =>{
+  //   // Check if the user is authenticated
+  //   const token = localStorage.getItem('token');
+  //   ws = new WebSocket("ws://localhost:8000/status");
+  //   ws.onmessage = (e) =>{
+  //     console.log(e.data);
+  //   }; 
+  //   if (!token) {
+  //     // Redirect to the login page or handle authentication failure
+  //     navigate('/login');
+  //   }
+  // },[]);
     return (
       <div className="App">
       <div className="sidebar">

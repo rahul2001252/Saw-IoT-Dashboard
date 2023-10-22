@@ -108,6 +108,7 @@ export default function MiniDrawer() {
             <ListItem key={item.text} disablePadding sx={{ display: 'block' }}>
               <Link to={item.link} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <ListItemButton
+                  title={open ? '' : item.text}
                   sx={{
                     minHeight: 48,
                     justifyContent: open ? 'initial' : 'center',
