@@ -24,6 +24,7 @@ function Controller() {
         <div className="half-left">
             <h2 className="textheading">PLC</h2>
           <ButtonBox button1Text="Estop" button2Text="Normal" />
+          <div></div>
           <div className="barbox">
             <h2 className="bartext">Saw Material</h2>
           <BarApp />

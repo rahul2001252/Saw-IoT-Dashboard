@@ -4,7 +4,7 @@ import './styles/StatusButton.css';
 
 const StatusButton = () => {
   const [status, setStatus] = useState('Cutting'); // Initial status
-
+  
   const toggleStatus = () => {
     // Toggle between 'default' and 'success' statuses
     setStatus(status === 'default' ? 'success' : 'default');

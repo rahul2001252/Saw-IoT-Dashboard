@@ -44,13 +44,27 @@
   border: 1px;
   background: rgb(245, 244, 244);
   border-radius: 15px;
+  border: 1px solid rgb(219, 216, 216);
   box-shadow: 0 10px 10px rgb(233, 227, 227);
   height:50vh; /* Adjust as needed */
 }
 .machine-status-buttons h2{
   text-align: center;
 }
-
+.status{
+  padding: 1vw 2.4vw;
+  border-radius: 15px;
+  color: white;
+}
+.status.Start{
+  background: rgb(79, 219, 79);
+}
+.status.Stop{
+  background: rgb(231, 4, 4);
+}
+.status.Alarm{
+  background: rgb(235, 156, 10);
+}
 .status-btn {
   display: flex;
   justify-content: space-evenly;

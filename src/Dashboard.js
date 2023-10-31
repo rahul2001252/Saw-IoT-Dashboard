@@ -1,28 +1,48 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles/App.css';
 import DonutApp from './Charts/DonutApp';
 import BarApp from './Charts/BarApp';
 import MiniDonut from './Charts/MiniDonut';
 import LineApp from './Charts/LineApp';
 import Sidebar from './Sidebar';
-import { useNavigate} from 'react-router-dom';
 import StatusButton from './StatusButton';
 
 const Dashboard = () => {
-  const navigate = useNavigate();
-  // var ws = null;
-  // useEffect(() =>{
+  const [ws, setWs] =useState(null);
+  const [messages, setMessages] = useState('');
+  
+  const connectWebSocket = () =>{
   //   // Check if the user is authenticated
-  //   const token = localStorage.getItem('token');
-  //   ws = new WebSocket("ws://localhost:8000/status");
-  //   ws.onmessage = (e) =>{
-  //     console.log(e.data);
-  //   }; 
-  //   if (!token) {
-  //     // Redirect to the login page or handle authentication failure
-  //     navigate('/login');
-  //   }
-  // },[]);
+    const newws = new WebSocket("ws://localhost:8000/status");
+    newws.onopen = () =>{
+      console.log("Websocket connection established");
+    };
+
+    newws.onmessage = (e) =>{
+      const newMessage = e.data;
+       // Update the state with the new message
+       setMessages(newMessage);
+      console.log(e.data);
+    };
+
+    newws.onclose = (e) =>{
+      console.log("Websocket connection closed:",e);
+
+      setTimeout(() => connectWebSocket(),1000);
+    }
+    setWs(ws);
+  };
+  useEffect(() =>{
+    connectWebSocket();
+
+    return () =>{
+      if(ws){
+        ws.close();
+      }
+    };
+
+  },[ws]);
+
     return (
       <div className="App">
       <div className="sidebar">
@@ -33,7 +53,7 @@ const Dashboard = () => {
         <div className="machine-status-buttons">
           <h2>Saw Status</h2>
           <div className="status-btn">
-            <div id="statusbtn"><StatusButton /></div>
+            <div className={`status ${messages === 'Start' ? 'Start' : messages === 'Stop' ? 'Stop': 'Alarm'}`}>{messages}</div>
             <div id="statusbtn"><StatusButton /></div>
             <div id="statusbtn"><StatusButton /></div>
           </div>

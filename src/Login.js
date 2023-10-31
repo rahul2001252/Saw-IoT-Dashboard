@@ -24,16 +24,19 @@ const Login = () => {
     }
     try {
       // Send a POST request to your backend for user authentication
-      const response = await axios.post('http://localhost:8000/api/login', {
-        email,
-        password,
+      const response = await fetch('http://localhost:8000/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email,password}),
       });
 
       if (response.status === 200) {
         // Authentication successful, store the JWT token in local storage
-        const { token } = response.data;
-        LocalStorage.set('token', token); // Store in local storage
-
+        // const { access_token } = response.data;
+        // LocalStorage.set('token', access_token); // Store in local storage
+        
         console.log('Login successful');
         openNotification('success', 'Login Successful');
         navigate('/dashboard');

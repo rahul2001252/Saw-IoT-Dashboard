@@ -15,7 +15,8 @@ const LineChart = ({data}) => {
 
   const chartData = [
     {
-      name: 'Series 1',
+      name: 'GFAgie01',
+      //name: (data.map((item)=>item.name))
       //labels: chartData.map((dataPoint)=>dataPoint.category)//
       data: (data.map((item)=>item.position)),
     },
